@@ -116,9 +116,9 @@ export class ParentComponent implements OnInit {
 
   createForms(guarantor: any): FormGroup {
     return this.formBuilder.group({
-      userid: [guarantor.userid],
-      username: [guarantor.username],
-      userrole: [guarantor.userrole]
+      userid: [{ value: guarantor.userid, disabled: true }],
+      username: [{ value: guarantor.username, disabled: true }],
+      userrole: [{ value: guarantor.userrole, disabled: false }]
     });
   }
 

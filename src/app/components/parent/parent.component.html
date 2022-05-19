@@ -50,9 +50,13 @@
                             <div class="col-md-4"><input type="text" formControlName="userid" class="form-control" /></div>
                             <div class="col-md-4"><input type="text" formControlName="username" class="form-control" /></div>
                             <div class="col-md-4">
-                                <select formControlName="userrole" class="form-control">
-                                    <option *ngFor="let item of selectRoles" [value]="item.key">{{item.value}}</option>
-                                </select>
+                                <div class="select-control form-control">
+                                    <label>
+                                        <select formControlName="userrole">
+                                            <option *ngFor="let item of selectRoles" [value]="item.key">{{item.value}}</option>
+                                        </select>
+                                    </label>
+                                </div>
                             </div> 
                         </div>
                     </div>
