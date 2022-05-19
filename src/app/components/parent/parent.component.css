@@ -6,9 +6,6 @@
     position: relative;
     /*Don't really need this just for demo styling*/
     min-width: 100%;
-    /* float: left; */
-    /* min-width: 200px; */
-    /* margin: 50px 33%; */
 }
 
 /*To remove button from IE11, thank you Matt */
@@ -44,18 +41,11 @@ select::-ms-expand {
     
     display: block;
     width: 100% !important;
-    /* max-width: 320px;
-    height: 50px;
-    float: right;
-    margin: 5px 0px;
-    padding: 0px 24px; */
     font-size: 16px;
-    /* line-height: 1.75; */
     color: #333;
     background-color: #ffffff;
     background-image: none;
     border: none;
-    /* border: 1px solid #cccccc; */
     -ms-word-break: normal;
     word-break: normal;
   }
