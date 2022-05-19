@@ -1,0 +1,69 @@
+<form [formGroup]="detailsForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="row">
+        <div class="col-md-6">
+            <div formGroupName="general">
+                <div class="form-group">
+                    <label for="id">id</label>
+                    <input type="text" id="id" formControlName="id" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" id="name" formControlName="name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="age">age</label>
+                    <input type="text" id="age" formControlName="age" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="text" id="email" formControlName="email" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div formGroupName="loan">
+                <div class="form-group">
+                    <label for="role">role</label>
+                    <input type="text" id="role" formControlName="role" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="company">company</label>
+                    <input type="text" id="company" formControlName="company" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="experience">experience</label>
+                    <input type="text" id="experience" formControlName="experience" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="salary">salary</label>
+                    <input type="text" id="salary" formControlName="salary" class="form-control" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div formArrayName="guarantors">
+                <div *ngFor="let guarantor of guarantors.controls; let i = index">
+                    <div [formGroupName]="i" class="container mb-2 plr-0">
+                        <div class="row">
+                            <div class="col-md-4"><input type="text" formControlName="userid" class="form-control" /></div>
+                            <div class="col-md-4"><input type="text" formControlName="username" class="form-control" /></div>
+                            <div class="col-md-4">
+                                <select formControlName="userrole" class="form-control">
+                                    <option *ngFor="let item of selectRoles" [value]="item.key">{{item.value}}</option>
+                                </select>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-4">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+<!-- <app-child [data]="data.guarantors"></app-child> -->
