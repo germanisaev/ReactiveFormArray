@@ -11,9 +11,9 @@ export class ParentComponent implements OnInit {
   public data: any = {
     general: {
       id: '372328932',
-      name: 'gai isaev',
+      name: 'guy isaev',
       age: '52',
-      email: 'gai70@gmail.com'
+      email: 'gi70@gmail.com'
     },
     loan: {
       role: 'Frontend Developer',
@@ -24,17 +24,17 @@ export class ParentComponent implements OnInit {
     guarantors: [
       {
         userid: '314568937',
-        username: 'german abramov',
+        username: 'yan abramov',
         userrole: '1'
       },
       {
         userid: '214327734',
-        username: 'david isaev',
+        username: 'david beckham',
         userrole: '9'
       },
       {
         userid: '714327734',
-        username: 'sofia isaev',
+        username: 'sofi loren',
         userrole: '10'
       }
     ]
