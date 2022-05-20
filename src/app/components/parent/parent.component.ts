@@ -11,7 +11,7 @@ export class ParentComponent implements OnInit {
   public data: any = {
     general: {
       id: '372328932',
-      name: 'guy isaev',
+      name: 'guy sebastian',
       age: '52',
       email: 'gi70@gmail.com'
     },
