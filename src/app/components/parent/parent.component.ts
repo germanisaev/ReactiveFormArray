@@ -10,10 +10,10 @@ export class ParentComponent implements OnInit {
 
   public data: any = {
     general: {
-      id: '314327735',
-      name: 'german isaev',
+      id: '372328932',
+      name: 'gai isaev',
       age: '52',
-      email: 'german.isaev@gmail.com'
+      email: 'gai70@gmail.com'
     },
     loan: {
       role: 'Frontend Developer',
@@ -23,17 +23,17 @@ export class ParentComponent implements OnInit {
     },
     guarantors: [
       {
-        userid: '314327735',
-        username: 'german isaev',
+        userid: '314568937',
+        username: 'german abramov',
         userrole: '1'
       },
       {
-        userid: '314327734',
+        userid: '214327734',
         username: 'david isaev',
         userrole: '9'
       },
       {
-        userid: '314327734',
+        userid: '714327734',
         username: 'sofia isaev',
         userrole: '10'
       }
